@@ -1,0 +1,10 @@
+{
+    "language":"Latin",
+    "level":0,
+    "words": [
+        { "id": 0, "latin":"casa", "english":"house", "type": "noun" },
+        { "id": 1, "latin":"puella", "english":"girl", "type": "noun"  },
+        { "id": 2, "latin":"sed", "english":"but", "type": "conjunction"  },
+        { "id": 3, "latin":"c\u0113na", "english":"dinner", "type": "noun"  }
+    ]
+}
