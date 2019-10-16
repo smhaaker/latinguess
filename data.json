@@ -1,10 +1,30 @@
-{
+[{
     "language":"Latin",
     "level":0,
     "words": [
-        { "id": 0, "latin":"casa", "latinNoAccent": "casa", "english":"house", "type": "noun" },
-        { "id": 1, "latin":"puella", "latinNoAccent": "puella", "english":"girl", "type": "noun"  },
-        { "id": 2, "latin":"sed", "latinNoAccent": "sed", "english":"but", "type": "conjunction"  },
-        { "id": 3, "latin":"c\u0113na", "latinNoAccent": "cena",  "english":"dinner", "type": "noun"  }
+        { "id": 0, "latin":"casa", "latinNoAccent": "casa", "english":"house", "type": "noun", "gender": "F"},
+        { "id": 1, "latin":"puella", "latinNoAccent": "puella", "english":"girl", "type": "noun", "gender": "F"},
+        { "id": 2, "latin":"f\u0113mina", "latinNoAccent": "femina", "english":"woman", "type": "noun", "gender": "F"},
+        { "id": 3, "latin":"c\u0113na", "latinNoAccent": "cena",  "english":"dinner", "type": "noun", "gender": "F" },
+        { "id": 4, "latin":"fessa", "latinNoAccent": "fessa",  "english":"tired", "type": "adjective", "gender": "NA" },
+        { "id": 5, "latin":"laeta", "latinNoAccent": "laeta",  "english":"happy", "type": "adjective", "gender": "NA" },
+        { "id": 6, "latin":"p\u0101rata", "latinNoAccent": "parata",  "english":"ready", "type": "adjective", "gender": "NA" },
+        { "id": 7, "latin":"sed", "latinNoAccent": "sed", "english":"but", "type": "conjunction", "gender": "NA"},
+        { "id": 8, "latin":"et", "latinNoAccent": "et", "english":"and", "type": "conjunction", "gender": "NA"}
     ]
-}
+},
+{
+    "language":"Latin",
+    "level":1,
+    "words": [
+        { "id": 0, "latin":"casa", "latinNoAccent": "casa", "english":"house", "type": "noun", "gender": "F"},
+        { "id": 1, "latin":"puella", "latinNoAccent": "puella", "english":"girl", "type": "noun", "gender": "F"},
+        { "id": 2, "latin":"f\u0113mina", "latinNoAccent": "femina", "english":"woman", "type": "noun", "gender": "F"},
+        { "id": 3, "latin":"c\u0113na", "latinNoAccent": "cena",  "english":"dinner", "type": "noun", "gender": "F" },
+        { "id": 4, "latin":"fessa", "latinNoAccent": "fessa",  "english":"tired", "type": "adjective", "gender": "NA" },
+        { "id": 5, "latin":"laeta", "latinNoAccent": "laeta",  "english":"happy", "type": "adjective", "gender": "NA" },
+        { "id": 6, "latin":"p\u0101rata", "latinNoAccent": "parata",  "english":"ready", "type": "adjective", "gender": "NA" },
+        { "id": 7, "latin":"sed", "latinNoAccent": "sed", "english":"but", "type": "conjunction", "gender": "NA"},
+        { "id": 8, "latin":"et", "latinNoAccent": "et", "english":"and", "type": "conjunction", "gender": "NA"}
+    ]
+}]

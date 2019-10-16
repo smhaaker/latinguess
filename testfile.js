@@ -4,7 +4,10 @@ const fs = require('fs');
 
 let rawdata = fs.readFileSync('data.json');
 let myObj = JSON.parse(rawdata);
-// console.log(myObj);
+// console.log(myObj.level)
+// console.log(myObj[1]); // level 1
+// console.log(myObj[0]); // level 0
+
 let correctAnswers = 0;
 let wrongAnswers = 0;
 
@@ -12,8 +15,8 @@ let questionsToAsk = 10; // variable to see how many questions
 let usedQuestions = []
 
 
-function guessWord(listNumber) {
-    if (usedQuestions.includes(myObj.words[listNumber].id)){
+function guessWord(listNumber, level) {
+    if (usedQuestions.includes(myObj[level].words[listNumber].id)){
         console.log('used already')
     }
 
@@ -21,13 +24,13 @@ function guessWord(listNumber) {
             input: process.stdin,
             output: process.stdout
           })
-        readline.question(`What does this word mean? ${myObj.words[listNumber].latin}: `, (guess) => {
+        readline.question(`What does this word mean? ${myObj[level].words[listNumber].latin}: `, (guess) => {
         // console.log(myObj.cars[1].models.includes(name))
         // if (myObj.words[listNumber].english.includes(guess)) {
-        if (myObj.words[listNumber].english.toUpperCase() === guess.toUpperCase()) {
-            console.log(`Correct, ${myObj.words[listNumber].latin} means ${myObj.words[listNumber].english} and is a ${myObj.words[listNumber].type}`)
+        if (myObj[level].words[listNumber].english.toUpperCase() === guess.toUpperCase()) {
+            console.log(`Correct, ${myObj[level].words[listNumber].latin} means ${myObj[level].words[listNumber].english} and is a ${myObj[level].words[listNumber].type}`)
             correctAnswers++
-            usedQuestions.push(myObj.words[listNumber].id)
+            usedQuestions.push(myObj[level].words[listNumber].id)
             console.log(usedQuestions)
         }
         else {
@@ -37,7 +40,7 @@ function guessWord(listNumber) {
         readline.close()
         console.log(`you currently have ${correctAnswers} correct answers`)
         console.log(`you currently have ${wrongAnswers} wrong answers`)
-        guessWord(getRandomInt(4))
+        guessWord(getRandomInt(9), 0)
   })
 }
 
@@ -45,4 +48,4 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
-guessWord(getRandomInt(4))
+guessWord(getRandomInt(9), 0)
