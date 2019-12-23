@@ -27,4 +27,20 @@
         { "id": 7, "latin":"sed", "latinNoAccent": "sed", "english":"but", "type": "conjunction", "gender": "NA"},
         { "id": 8, "latin":"et", "latinNoAccent": "et", "english":"and", "type": "conjunction", "gender": "NA"}
     ]
-}]
+},
+{
+    "language":"Latin",
+    "level":2,
+    "words": [
+        { "id": 0, "latin":"iuvat", "latinNoAccent": "iuvat", "english":"helps", "type": "verb", "gender": "NA"},
+        { "id": 1, "latin":"laudat", "latinNoAccent": "laudat", "english":"praises", "type": "verb", "gender": "NA"},
+        { "id": 2, "latin":"n\u0101rrat", "latinNoAccent": "narrat", "english":"tells", "type": "verb", "gender": "NA"},
+        { "id": 3, "latin":"parat", "latinNoAccent": "parat",  "english":"prepares", "type": "verb", "gender": "NA" },
+        { "id": 4, "latin":"portat", "latinNoAccent": "portat",  "english":"carries", "type": "verb", "gender": "NA" },
+        { "id": 5, "latin":"salu\u0363tat", "latinNoAccent": "salutat",  "english":"greets", "type": "verb", "gender": "NA" },
+        { "id": 6, "latin":"vocat", "latinNoAccent": "vocat",  "english":"calls", "type": "verb", "gender": "NA" },
+        { "id": 7, "latin":"aqua", "latinNoAccent": "aqua", "english":"water", "type": "noun", "gender": "F"},
+        { "id": 8, "latin":"et", "latinNoAccent": "et", "english":"and", "type": "conjunction", "gender": "F"}
+    ]
+}
+]
