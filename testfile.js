@@ -14,6 +14,7 @@ let wrongAnswers = 0;
 let questionsToAsk = 10; // variable to see how many questions 
 let usedQuestions = []
 
+let levelToPlay = 2
 
 function guessWord(listNumber, level) {
     if (usedQuestions.includes(myObj[level].words[listNumber].id)){
@@ -40,7 +41,7 @@ function guessWord(listNumber, level) {
         readline.close()
         console.log(`you currently have ${correctAnswers} correct answers`)
         console.log(`you currently have ${wrongAnswers} wrong answers`)
-        guessWord(getRandomInt(9), 0)
+        guessWord(getRandomInt(9), levelToPlay)
   })
 }
 
@@ -48,4 +49,4 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
-guessWord(getRandomInt(9), 0)
+guessWord(getRandomInt(9), levelToPlay)
