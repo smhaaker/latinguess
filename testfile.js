@@ -48,6 +48,6 @@ function guessWord(listNumber, level) {
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
-  }
+}
 
 guessWord(getRandomInt(levelLength), levelToPlay)
