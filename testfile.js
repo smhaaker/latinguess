@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-let rawdata = fs.readFileSync('data.json');
+let rawdata = fs.readFileSync('data/data.json');
 let myObj = JSON.parse(rawdata);
 // console.log(myObj.level)
 // console.log(myObj[1]); // level 1
