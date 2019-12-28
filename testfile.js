@@ -6,15 +6,16 @@ let rawdata = fs.readFileSync('data.json');
 let myObj = JSON.parse(rawdata);
 // console.log(myObj.level)
 // console.log(myObj[1]); // level 1
-// console.log(myObj[0]); // level 0
-
+// console.log(myObj[2]); // level 0
 let correctAnswers = 0;
 let wrongAnswers = 0;
 
 let questionsToAsk = 10; // variable to see how many questions 
 let usedQuestions = []
 
-let levelToPlay = 2
+let levelToPlay = 0
+console.log(myObj[levelToPlay].words.length); // 
+let levelLength = myObj[levelToPlay].words.length
 
 function guessWord(listNumber, level) {
     if (usedQuestions.includes(myObj[level].words[listNumber].id)){
@@ -41,7 +42,7 @@ function guessWord(listNumber, level) {
         readline.close()
         console.log(`you currently have ${correctAnswers} correct answers`)
         console.log(`you currently have ${wrongAnswers} wrong answers`)
-        guessWord(getRandomInt(9), levelToPlay)
+        guessWord(getRandomInt(levelLength), levelToPlay)
   })
 }
 
@@ -49,4 +50,4 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
-guessWord(getRandomInt(9), levelToPlay)
+guessWord(getRandomInt(levelLength), levelToPlay)
