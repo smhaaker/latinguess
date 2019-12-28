@@ -40,7 +40,12 @@
         { "id": 5, "latin":"salu\u0363tat", "latinNoAccent": "salutat",  "english":"greets", "type": "verb", "gender": "NA" },
         { "id": 6, "latin":"vocat", "latinNoAccent": "vocat",  "english":"calls", "type": "verb", "gender": "NA" },
         { "id": 7, "latin":"aqua", "latinNoAccent": "aqua", "english":"water", "type": "noun", "gender": "F"},
-        { "id": 8, "latin":"et", "latinNoAccent": "et", "english":"and", "type": "conjunction", "gender": "F"}
+        { "id": 8, "latin":"f\u0101bula", "latinNoAccent": "fabula", "english":"story", "type": "noun", "gender": "F"},
+        { "id": 9, "latin":"f\u012Blia", "latinNoAccent": "filia", "english":"daughter", "type": "noun", "gender": "F"},
+        { "id": 10, "latin":"via", "latinNoAccent": "via", "english":"road", "type": "noun", "gender": "F"},
+        { "id": 11, "latin":"\u012Br\u0101ta", "latinNoAccent": "irata", "english":"angry", "type": "adjective", "gender": "F"},
+        { "id": 12, "latin":"subit\u014D", "latinNoAccent": "subito", "english":"suddenly", "type": "adverb", "gender": "NA"},
+        { "id": 13, "latin":"in", "latinNoAccent": "in", "english":"in", "type": "preposition", "gender": "NA"}
     ]
 }
 ]
