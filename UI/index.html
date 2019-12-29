@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Latin Guess Multiple Choice</title>
     
 </head>
 
 <body>
 
-
+    <label for="level">Level:</label>
     <select name="level" id="level">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -24,7 +25,16 @@
 
     <br><br>
     <div>
-        What does: <span id="wordToGuess"></span> mean?
+        <div>
+            What does: <span id="wordToGuess"></span> mean?
+        </div>
+        <div class="multiChoice">
+            <span id="options"></span>
+        </div>
+
+        <button onclick=options()>Next Question</button>
+        <br><br>
+        Question left <span id="questionsLeft"></span>
     </div>
 
 </body>
