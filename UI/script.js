@@ -16,7 +16,6 @@ function selectLevel() {
         currentWords = []
         // console.log(currentWords)
         let data = JSON.parse(this.response)
-        // console.log(data)
         if (request.status >= 200 && request.status < 400) {
         data.words.forEach(words => {
             // console.log(words)
@@ -40,6 +39,8 @@ function options() {
     let word = document.getElementById('wordToGuess')
     let options = document.getElementById('options')
     let questionLeft = document.getElementById('questionsLeft')
+    let nextButton = document.getElementById('nextButton');
+    nextButton.style.display = 'none';
     questionLeft.innerHTML = unusedWords.length
     console.log(unusedWords.length)
     console.log(unusedWords)
@@ -50,10 +51,8 @@ function options() {
         questionLeft.innerHTML = `No more words to guess, total score ${score}`
     }
     else {
-        console.log(`shuffling good words ${JSON.stringify(shuffleCorrectWord())}`)
-
         let shuffledOptions = shuffledWords()
-        shuffledOptions.push(shuffleCorrectWord())
+        // shuffledOptions.push(shuffleCorrectWord())
         
         let randomNumber = getRandomInt(4)
         word.innerHTML = shuffledOptions[randomNumber].latin
@@ -73,10 +72,10 @@ function options() {
         // }
 
         options.innerHTML = `
-            <button class="guesses" id="option1" onclick="guess(${wordId}, ${shuffledOptions[0].id})">${shuffledOptions[0].english}</button>
-            <button class="guesses" id="option1" onclick="guess(${wordId}, ${shuffledOptions[1].id})">${shuffledOptions[1].english}</button><br>
-            <button class="guesses" id="option1" onclick="guess(${wordId}, ${shuffledOptions[2].id})">${shuffledOptions[2].english}</button>
-            <button class="guesses" id="option1" onclick="guess(${wordId}, ${shuffledOptions[3].id})">${shuffledOptions[3].english}</button>
+            <button class="guesses" id="button1" onclick="guess(this.id, ${wordId}, ${shuffledOptions[0].id})">${shuffledOptions[0].english}</button>
+            <button class="guesses" id="button2" onclick="guess(this.id, ${wordId}, ${shuffledOptions[1].id})">${shuffledOptions[1].english}</button><br>
+            <button class="guesses" id="button3" onclick="guess(this.id, ${wordId}, ${shuffledOptions[2].id})">${shuffledOptions[2].english}</button>
+            <button class="guesses" id="button4" onclick="guess(this.id, ${wordId}, ${shuffledOptions[3].id})">${shuffledOptions[3].english}</button>
             `
         // adds id of correct word to usedWords
 
@@ -102,18 +101,28 @@ function shuffleCorrectWord() {
 }
 
 
-function guess(wordId, option){
-    // console.log(wordId + " matches: " +  option)
+function guess(id, wordId, option){
+    // disables all buttons
+    let y = document.getElementsByClassName("guesses");
+    for (let i = 0; i < y.length; i++) {
+        y[i].disabled = true;
+    }
+
     if (wordId === option) {
-        console.log(wordId + " matches: " +  option)
+        // console.log(wordId + " matches: " +  option)
         score++
+        let buttonCorrect = document.getElementById(id)
+        buttonCorrect.style.backgroundColor = 'green'
+        buttonCorrect.style.color = 'white'
     }
     else {
-        console.log('wrong')
+        // console.log('wrong')
+        let buttonCorrect = document.getElementById(id)
+        buttonCorrect.style.backgroundColor = 'red'
     }
-    // disable all buttons when clicked
-    // display right / wrong. 
-    // enable next button
+
+    let nextButton = document.getElementById('nextButton');
+    nextButton.style.display = 'block';
     // need to remove correctly guessed word from possiblity of being correct again... 
 }
 
