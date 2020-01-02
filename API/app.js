@@ -10,7 +10,7 @@ const fs = require('fs');
 let rawdata = fs.readFileSync('../data/data.json');
 let myObj = JSON.parse(rawdata);
 
-// console.log(myObj)
+// console.log(myObj.length)
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
@@ -26,7 +26,12 @@ app.use(function(req, res, next) {
 // get all words fromone level
 app.get("/get_words/:level", (req, res) => {
     res.status(200).send(myObj[req.params.level]);
-  });
+    });
+
+app.get("/get_level_amount/", (req, res) => {
+    res.status(200).send(JSON.stringify(myObj.length));
+    });
+
 
 app.listen(port, () => {
   console.log(`running at port ${port}`);
