@@ -4,6 +4,29 @@ let score = 0
 let unusedWords = []
 
 
+function getLevels() {
+    // Create a request variable and assign a new XMLHttpRequest object to it.
+    let request = new XMLHttpRequest()
+    // Open a new connection, using the GET request on the URL endpoint
+    request.open('GET', `http://localhost:3000/get_level_amount`, true)
+
+    request.onload = function() {
+        let level = document.getElementById('level')
+
+        let data = JSON.parse(this.response)
+        // console.log(data)    
+        // console.log(typeof data)
+        for (let i = 0; i < data; i++) {
+            let el = document.createElement("option")
+            el.value = i+1
+            el.textContent = i+1
+            level.appendChild(el)
+        }
+    }
+    // Send request
+    request.send()
+}
+
 function selectLevel() {
     // Create a request variable and assign a new XMLHttpRequest object to it.
     let request = new XMLHttpRequest()
@@ -131,3 +154,4 @@ function getRandomInt(max) {
 }
 
 
+getLevels() // populates dropdown of levels. 
