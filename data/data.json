@@ -1,20 +1,5 @@
 [{
     "language":"Latin",
-    "level":0,
-    "words": [
-        { "id": 0, "latin":"casa", "latinNoAccent": "casa", "english":"house", "type": "noun", "gender": "F"},
-        { "id": 1, "latin":"puella", "latinNoAccent": "puella", "english":"girl", "type": "noun", "gender": "F"},
-        { "id": 2, "latin":"f\u0113mina", "latinNoAccent": "femina", "english":"woman", "type": "noun", "gender": "F"},
-        { "id": 3, "latin":"c\u0113na", "latinNoAccent": "cena",  "english":"dinner", "type": "noun", "gender": "F" },
-        { "id": 4, "latin":"fessa", "latinNoAccent": "fessa",  "english":"tired", "type": "adjective", "gender": "NA" },
-        { "id": 5, "latin":"laeta", "latinNoAccent": "laeta",  "english":"happy", "type": "adjective", "gender": "NA" },
-        { "id": 6, "latin":"p\u0101rata", "latinNoAccent": "parata",  "english":"ready", "type": "adjective", "gender": "NA" },
-        { "id": 7, "latin":"sed", "latinNoAccent": "sed", "english":"but", "type": "conjunction", "gender": "NA"},
-        { "id": 8, "latin":"et", "latinNoAccent": "et", "english":"and", "type": "conjunction", "gender": "NA"}
-    ]
-},
-{
-    "language":"Latin",
     "level":1,
     "words": [
         { "id": 0, "latin":"casa", "latinNoAccent": "casa", "english":"house", "type": "noun", "gender": "F"},
@@ -46,6 +31,35 @@
         { "id": 11, "latin":"\u012Br\u0101ta", "latinNoAccent": "irata", "english":"angry", "type": "adjective", "gender": "F"},
         { "id": 12, "latin":"subit\u014D", "latinNoAccent": "subito", "english":"suddenly", "type": "adverb", "gender": "NA"},
         { "id": 13, "latin":"in", "latinNoAccent": "in", "english":"in", "type": "preposition", "gender": "NA"}
+    ]
+},
+{
+    "language":"Latin",
+    "level":3,
+    "words": [
+        { "id": 0, "latin":"manet", "latinNoAccent": "manet", "english":"stays", "type": "verb", "gender": "NA"},
+        { "id": 1, "latin":"sedet", "latinNoAccent": "sedet", "english":"sits", "type": "verb", "gender": "NA"},
+        { "id": 2, "latin":"videt", "latinNoAccent": "videt", "english":"sees", "type": "verb", "gender": "NA"},
+        { "id": 3, "latin":"ascendit", "latinNoAccent": "ascendit",  "english":"climbs", "type": "verb", "gender": "NA" },
+        { "id": 4, "latin":"cadit", "latinNoAccent": "cadit",  "english":"falls", "type": "verb", "gender": "NA" },
+        { "id": 5, "latin":"currit", "latinNoAccent": "currit",  "english":"runs", "type": "verb", "gender": "NA" },
+        { "id": 6, "latin":"d\u016Bcit", "latinNoAccent": "ducit",  "english":"leads", "type": "verb", "gender": "NA" },
+        { "id": 7, "latin":"inquit", "latinNoAccent": "inquit", "english":"says", "type": "verb", "gender": "NA"},
+        { "id": 8, "latin":"mittit", "latinNoAccent": "mittit", "english":"sends", "type": "verb", "gender": "NA"},
+        { "id": 9, "latin":"redit", "latinNoAccent": "redit", "english":"returns", "type": "verb", "gender": "NA"},
+        { "id": 10, "latin":"audit", "latinNoAccent": "audit", "english":"hears", "type": "verb", "gender": "NA"},
+        { "id": 11, "latin":"terra", "latinNoAccent": "terra", "english":"earth", "type": "noun", "gender": "NA"},
+        { "id": 12, "latin":"cibus", "latinNoAccent": "cibus", "english":"food", "type": "noun", "gender": "NA"},
+        { "id": 13, "latin":"col\u014Dnus", "latinNoAccent": "colonus", "english":"farmer", "type": "noun", "gender": "NA"},
+        { "id": 14, "latin":"filius", "latinNoAccent": "filius", "english":"son", "type": "noun", "gender": "NA"},
+        { "id": 15, "latin":"ager", "latinNoAccent": "ager", "english":"field", "type": "noun", "gender": "NA"},
+        { "id": 16, "latin":"puer", "latinNoAccent": "puer", "english":"boy", "type": "noun", "gender": "NA"},
+        { "id": 17, "latin":"puer", "latinNoAccent": "puer", "english":"boy", "type": "noun", "gender": "NA"},
+        { "id": 18, "latin":"\u0101nxius", "latinNoAccent": "anxius", "english":"anzious", "type": "adjective", "gender": "NA"},
+        { "id": 19, "latin":"eum", "latinNoAccent": "eum", "english":"him", "type": "pronoun", "gender": "NA"},
+        { "id": 20, "latin":"eam", "latinNoAccent": "eam", "english":"her", "type": "pronoun", "gender": "NA"},
+        { "id": 21, "latin":"ad", "latinNoAccent": "ad", "english":"to / towards", "type": "preposition", "gender": "NA"},
+        { "id": 22, "latin":"nam", "latinNoAccent": "nam", "english":"for", "type": "conjunction", "gender": "NA"}
     ]
 }
 ]
