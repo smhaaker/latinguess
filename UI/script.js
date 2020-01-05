@@ -18,7 +18,7 @@ function getLevels() {
         // console.log(typeof data)
         for (let i = 0; i < data; i++) {
             let el = document.createElement("option")
-            el.value = i+1
+            el.value = i
             el.textContent = i+1
             level.appendChild(el)
         }

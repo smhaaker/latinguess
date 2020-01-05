@@ -6,35 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Latin Guess Multiple Choice</title>
+    <title>MC Latin</title>
     
 </head>
 
 <body>
 
-    <label for="level">Level:</label>
-    <select name="level" id="level">
-        <option value="0">Select A Level</option>
 
-    </select>
+    <header>MC Latin</header>
 
+    <main>
+        <label for="level">Level:</label>
+        <select name="level" id="level">
+            <option value="0">Select A Level</option>
+    
+        </select>
+    
+    
+        <button onclick="selectLevel()">Start</button>
 
-    <button onclick="selectLevel()">Start</button>
-
-
-    <br><br>
-    <div>
-        <div>
-            What does: <span id="wordToGuess"></span> mean?
-        </div>
-        <div class="multiChoice">
-            <span id="options"></span>
-        </div>
-
-        <button id="nextButton" onclick=options()>Next Question</button>
         <br><br>
-        Question left <span id="questionsLeft"></span>
-    </div>
+        <div id="guessArea">
+            <div id="question">
+                What does: <span id="wordToGuess"></span> mean?
+            </div>
+            <div class="multiChoice">
+                <span id="options"></span>
+            </div>
+    
+            <button id="nextButton" onclick=options()>Next Question</button>
+            <br><br>
+            Question left <span id="questionsLeft"></span>
+        </div>
+    </main>
+    
+    
+    <footer>footer</footer>
+
 
 </body>
 
