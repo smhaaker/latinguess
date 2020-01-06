@@ -31,6 +31,7 @@ footer {
 }
 
 #question{
+    display: none;
     color: white;
     text-align: left;
     margin-left: 3%;

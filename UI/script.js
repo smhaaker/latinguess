@@ -31,7 +31,9 @@ function selectLevel() {
     // Create a request variable and assign a new XMLHttpRequest object to it.
     let request = new XMLHttpRequest()
     // let level = 0
+    let showQuestion = document.getElementById('question')
     let level = document.getElementById('level').value  
+    showQuestion.style.display = 'block';
     // Open a new connection, using the GET request on the URL endpoint
     request.open('GET', `http://localhost:3000/get_words/${level}`, true)
 
