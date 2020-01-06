@@ -55,7 +55,7 @@
         { "id": 15, "latin":"ager", "latinNoAccent": "ager", "english":"field", "type": "noun", "gender": "NA"},
         { "id": 16, "latin":"puer", "latinNoAccent": "puer", "english":"boy", "type": "noun", "gender": "NA"},
         { "id": 17, "latin":"puer", "latinNoAccent": "puer", "english":"boy", "type": "noun", "gender": "NA"},
-        { "id": 18, "latin":"\u0101nxius", "latinNoAccent": "anxius", "english":"anzious", "type": "adjective", "gender": "NA"},
+        { "id": 18, "latin":"\u0101nxius", "latinNoAccent": "anxius", "english":"anxious", "type": "adjective", "gender": "NA"},
         { "id": 19, "latin":"eum", "latinNoAccent": "eum", "english":"him", "type": "pronoun", "gender": "NA"},
         { "id": 20, "latin":"eam", "latinNoAccent": "eam", "english":"her", "type": "pronoun", "gender": "NA"},
         { "id": 21, "latin":"ad", "latinNoAccent": "ad", "english":"to / towards", "type": "preposition", "gender": "NA"},
